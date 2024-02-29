@@ -1,4 +1,100 @@
+:root{
+    --primario:#35374B;
+    --secundario:#50727B;
+    --terciario:#78A083;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --negroClaro: #2f2e2e;
+}
+html{
+
+    font-size: 62%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{ 
+box-sizing: inherit;
+      
+}
+body{
+    font-size: 16px; /*1rem=10px*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-image: linear-gradient(rgba(5,7,12,0.7),rgba(5,7,12,0.7)), 
+        url(../imagenes/fondo.png);/*Para añadir opacidad a la imagen de fondo*/
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+   
+}
+
+
+
+
+
 h1{
     text-align: center;
+    font-size: 3rem;
+    color: var(--blanco);
+}
 
+h2{
+    text-align: center;
+    font-size: 2.5rem ;
+    color: var(--blanco);
+}
+p{
+    color: var(--blanco);
+}
+.contenedorPadre{
+    margin: 5rem 0rem;
+}
+
+.contenedor1{
+    margin: 3rem 30rem;
+    text-align: center;
+    background-color: var(--primario);
+    padding: 1rem;
+    border-radius: 2rem;
+    max-width: 120rem;
+    
+
+}
+@media (max-width: 480px) {
+    .contenedor1{
+        margin: 3rem 3rem;
+        padding: 1rem;
+    }
+    
+    
+}
+.contenedor1:hover{
+    background-color: var(--terciario);
+    
+}
+
+.contenedor1 a{
+    color: var(--blanco);
+    text-decoration: none;
+
+}
+.contenedor1 a:hover{
+    color: var(--negro);
+}
+
+
+
+.imagen-perfil{
+    text-align: center;
+}
+
+.fotoPerfil{
+    border-radius: 50%;
+    text-align: center;
+    height: 200px;
+    width: 200px;
 }
